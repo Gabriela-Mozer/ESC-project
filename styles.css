@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+.nav-place {
+  position: relative;
+  background-color: #b5ebe5;
+  width: 100vw;
+  background-image: url("./other/buttons_1.svg");
+  height: 255px;
+  background-repeat: no-repeat;
+  background-size: 120px;
+  background-position-x: 80vw;
+  background-position-y: 20vh;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.main {
+  width: 100vw;
+  height: 50vw;
+  background-color: #b5ebe5;
+  border-bottom-left-radius: 50% 100%;
+  border-bottom-right-radius: 50% 100%;
+  display: flex;
+}
+
+.half-circle {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 50vw;
+  height: 767px;
+  background-color: #b5ebe5;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  z-index: -1;
+  transform: translate(139%, 0);
+}
+
+.slideshow-promos img {
+  width: 100%;
+  height: auto;
+}
+
+.products,
+.contact-section,
+.about {
+  position: relative;
+  z-index: 10;
+  padding: 20px;
+}
+
+.down-circle {
+  position: absolute;
+  top: 550%;
+
+  width: 100vw;
+  height: 535px;
+  background-color: #b5ebe5;
+  /* border-radius: 50%; */
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+
+  z-index: -1;
+}
+
+.main-slide {
+  width: 550px;
+}
+
+.main-slide_2 {
+  width: 550px;
+}
+
+.tooltip-container {
+  position: relative;
+  /* display: inline-block; */
+  display: flex;
+}
+
+.tooltip-container .tooltip {
+  visibility: hidden;
+  position: absolute;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+}
+
+.tooltip-container:hover .tooltip {
+  display: inline;
+  visibility: visible;
+}

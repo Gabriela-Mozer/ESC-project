@@ -22,96 +22,487 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>ESC</title>
   </head>
   <body>
     <div class="nav-place">
-      <nav>
+      <nav class="nav">
         <a>Sklep</a>
         <a>Promocje</a>
-        <a class="tooltip-container"
-          >Poradnik Fiskalny
-          <p class="tooltip">Text test</p>
-        </a>
 
-        <div class="logo-container"><img src="./FISKASY/aji@2x.png" /></div>
+        <a class="tooltip-link">Poradnik fiskalny</a>
+        <span class="tooltip">
+          <a href="#">Jak wybrać urządzenie fiskalne</a>
+          <a href="#">Oprogramowanie do zarządzania firmą</a>
+          <a href="#">Sklep (systemy sprzedaży)</a>
+          <a href="#">Restauracja</a>
+        </span>
 
-        <input type="text" placeholder="Wyszukaj.." />
+        <div class="logo-container">
+          <img src="./FISKASY/aji.png" class="logo" />
+        </div>
+        <div class="search-bar-container">
+          <img src="./other/dot_ellipse.svg" class="white-round" />
+          <input type="search" placeholder="Wyszukaj..." class="search-bar" />
+          <img src="./other/search.svg" class="search-icon" />
+        </div>
       </nav>
     </div>
     <div class="main">
+      <div class="uphalf-circle"></div>
       <div class="main-sidebar">
-        <h2 class="main-sidebar__header">Masz Pytanie?</h2>
-        <p class="main-sidebar__subheader">Wyślij wiadomość</p>
+        <h2 class="main-sidebar__header">MASZ PYTANIE?</h2>
+        <p class="main-sidebar__subheader">WYŚLIJ WIADOMOŚĆ</p>
         <span class="main-sidebar__socials">
-          <a></a>
-          <a></a>
-          <a></a>
-          <a></a>
+          <a><img src="./FISKASY/fb.png" class="fb-logo" /></a>
+          <a><img src="./FISKASY/ig.png" class="ig-logo" /></a>
+          <a><img src="./FISKASY/yt.png" class="yt-logo" /></a>
+          <a><img src="./FISKASY/ln.png" class="ln-logo" /></a>
         </span>
+        <img
+          src="./other/background-shapes_3.svg"
+          alt="background-shapes"
+          class="background-shapes-socials"
+        />
         <div class="table">
-          <h2>Wybierz swoją branże i poznaj urządzenia</h2>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+          <h2 class="industry-header">
+            WYBIERZ SWOJĄ BRANŻĘ I POZNAJ URZĄDZENIA
+          </h2>
+          <ul class="industry-ul">
+            <li>Salon fryzjerski, salon kosmetyczny</li>
+            <li>Fitness i siłownie</li>
+            <li>Branża budowlana</li>
+            <li>Lekarze</li>
+            <li>Prawnicy</li>
+            <li>Mała gastronomia</li>
+            <li>Warsztat samochodowy, wulkanizacja</li>
+            <li>Apteka</li>
+            <li>Piekarnia i cukiernia</li>
+            <li>Mały puntk handlowo usługowy</li>
+            <li>Sklep internetowy</li>
           </ul>
 
-          <h2>Poradnik</h2>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+          <h2 class="tutorial-header">PORADNIK</h2>
+          <ul class="tutorial-ul">
+            <li>Jak wybrać urządzenie fiskalne</li>
+            <li>Oprogramowanie do zarządzania firmą</li>
+            <li>Sklep (system sprzedaży)</li>
+            <li>Restauracja</li>
           </ul>
 
-          <h2>Informacje</h2>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+          <h2 class="info-header">INFORMACJE</h2>
+          <ul class="info-ul">
+            <li>Zmiana VAT. Programowanie kasy</li>
+            <li>Przeglądy okresowe</li>
+            <li>Porady prawne</li>
+            <li>Często zadawane pytania</li>
           </ul>
         </div>
+        <img
+          src="./other/background-shapes.svg"
+          alt="background-shapes"
+          class="background-shapes-info"
+        />
+
+        <div class="blue-circle"></div>
+        <img src="./other/black-price-dots.svg" class="black-circle" />
+        <img
+          src="./other/background-shapes_3.svg"
+          alt="background-shapes"
+          class="background-shapes-info-down"
+        />
       </div>
       <div class="main-center">
+        <div class="up-button-images">
+          <img
+            src="./other/background-shapes.svg"
+            alt="background-shapes"
+            class="background-shapes-right"
+          />
+          <img
+            src="./other/background-shapes_2.svg"
+            alt="background-shapes"
+            class="background-shapes-left"
+          />
+        </div>
+        <div class="buttons-container">
+          <div class="button-right-bright-container">
+            <img
+              src="./FISKASY/ajn@2x.png"
+              class="button-right-bright"
+              id="button-right-bright"
+            />
+            <img src="./FISKASY/ajl@2x.png" class="button-right-bright-hover" />
+          </div>
+
+          <div class="button-left-bright-container">
+            <img
+              src="./FISKASY/ajs@2x.png"
+              class="button-left-bright"
+              id="button-left-bright"
+            />
+            <img src="./FISKASY/ajq@2x.png" class="button-left-bright-hover" />
+          </div>
+        </div>
+
         <div class="slideshow-container">
-          <div>
-            <img src="./other/Slide_1.svg" alt="Slide 1" class="main-slide" />
+          <div class="carousel-item">
+            <h2 class="carousel-header slide-in-left">ELZAB Zeta Online</h2>
+            <a class="carousel-check-product slide-in-left"
+              >ZOBACZ PRODUKT W SKLEPIE</a
+            >
+            <a class="compare-link slide-in-left">Porównaj</a>
+            <img
+              src="./other/black-price-dots.svg"
+              class="black-ellipse slide-in-right"
+            />
+
+            <img
+              src="./other/CENA 0.00PLN.svg"
+              class="red-price slide-in-right"
+            />
+            <img
+              src="./other/red-slide-device.svg"
+              class="red-device slide-in-right"
+            />
+            <img
+              src="./other/Elipse_red.svg"
+              class="red-ellipse slide-in-bottom-right slide-in-bottom-left"
+            />
+            <img
+              src="./other/white-dot-circle.svg"
+              class="white-circle slide-in-bottom-right"
+            />
           </div>
-          <div>
-            <img src="./other/Slide_2.svg" alt="Slide 2" class="main-slide_2" />
+          <div class="carousel-item">
+            <h2 class="carousel-header_2 slide-in-left">
+              DATECS WP-50 WiFi Online
+            </h2>
+            <a class="carousel-check-product_2 slide-in-left"
+              >ZOBACZ PRODUKT W SKLEPIE</a
+            >
+            <a class="compare-link_2 slide-in-left">Porównaj</a>
+            <img
+              src="./other/white-dot-circle.svg"
+              class="white-circle_2 slide-in-right"
+            />
+
+            <img
+              src="./other/CENA 0.00PLN.svg"
+              class="blue-price slide-in-bottom-right"
+            />
+            <img
+              src="./other/blue-slide-device.svg"
+              class="blue-device slide-in-bottom-right"
+            />
+            <img
+              src="./other/Ellipse_blue.svg"
+              class="blue-ellipse slide-in-bottom-right slide-in-bottom-left"
+            />
+            <img
+              src="./other/black-price-dots.svg"
+              class="black-ellipse_2 slide-in-bottom-right"
+            />
           </div>
         </div>
-        <div class="slideshow-promos">
-          <img src="./FISKASY/agf.png" alt="Slide 1" />
-          <img src="./FISKASY/agq.png" alt="Slide 2" />
-          <img src="./FISKASY/agr.png" alt="Slide 3" />
-          <img src="./FISKASY/ags.png" alt="Slide 3" />
-        </div>
-        <section class="products">
-          <div class="half-circle"></div>
+
+        <section class="products-prizes">
+          <h2 class="promo-header">PROMOCJE</h2>
+          <div class="slideshow-promos">
+            <div class="slide-img" alt="Slide 1">
+              <h3 class="device-name">DATECS WP-50 Wi-Fi online</h3>
+              <img src="./FISKASY/agf.png" alt="Slide 1" class="device-slide" />
+              <p class="device-price">OD 1429PLN</p>
+
+              <img src="./FISKASY/aky.png" class="percent" />
+            </div>
+            <div class="slide-img" alt="Slide 2">
+              <h3 class="device-name">Posnet Thermal HD Online</h3>
+              <img src="./FISKASY/ako.png" alt="Slide 2" class="device-slide" />
+              <p class="device-price">OD 3249PLN</p>
+              <img src="./FISKASY/aky.png" class="percent" />
+            </div>
+
+            <div class="slide-img" alt="Slide 3">
+              <h3 class="device-name">Kasoterminal POSPAY2 Online</h3>
+              <img src="./FISKASY/akh.png" alt="Slide 3" class="device-slide" />
+              <p class="device-price">OD 1799PLN</p>
+              <img src="./FISKASY/aky.png" class="percent" />
+            </div>
+
+            <div class="slide-img" alt="Slide 4">
+              <h3 class="device-name">Notivus Nano Online</h3>
+              <img src="./FISKASY/ags.png" alt="Slide 4" class="device-slide" />
+              <p class="device-price">OD 1799PLN</p>
+              <img src="./FISKASY/aky.png" class="percent" />
+            </div>
+          </div>
+          <div class="custom-prev">
+            <img src="./FISKASY/ajs@2x.png" class="custom-prev-img" />
+
+            <img src="./FISKASY/ajq@2x.png" class="custom-prev-img-hover" />
+          </div>
+          <div class="custom-next">
+            <img src="./FISKASY/ajn@2x.png" class="custom-next-img" />
+            <img src="./FISKASY/ajl@2x.png" class="custom-next-img-hover" />
+          </div>
+
+          <h1 class="products-header">KATALOG PRODUKTÓW</h1>
+          <section class="products">
+            <div class="image-grid">
+              <div class="image-item">
+                <img src="./FISKASY/agf.png" alt="Image 1" />
+              </div>
+              <div class="image-item">
+                <img src="./FISKASY/agq.png" alt="Image 2" />
+              </div>
+              <div class="image-item">
+                <img src="./FISKASY/afw.png" alt="Image 3" />
+              </div>
+              <div class="image-item">
+                <img src="./FISKASY/agr.png" alt="Image 4" />
+              </div>
+              <div class="image-item">
+                <img src="./FISKASY/aga.png" alt="Image 5" />
+              </div>
+              <div class="image-item">
+                <img src="./FISKASY/ags.png" alt="Image 6" />
+              </div>
+              <div class="image-item">
+                <img src="./FISKASY/afr.png" alt="Image 7" />
+              </div>
+              <div class="image-item">
+                <img src="./FISKASY/agb.png" alt="Image 8" />
+              </div>
+              <div class="image-item">
+                <img src="./FISKASY/afv.png" alt="Image 9" />
+              </div>
+              <div class="image-item">
+                <img src="./FISKASY/agt.png" alt="Image 10" />
+              </div>
+              <div class="image-item">
+                <img src="./FISKASY/agx.png" alt="Image 11" />
+              </div>
+              <div class="image-item">
+                <img src="./FISKASY/agv.png" alt="Image 12" />
+              </div>
+              <div class="image-item">
+                <img src="./FISKASY/agu.png" alt="Image 10" />
+              </div>
+              <div class="image-item">
+                <img src="./FISKASY/agy.png" alt="Image 11" />
+              </div>
+              <div class="image-item">
+                <img src="./FISKASY/agw.png" alt="Image 12" />
+              </div>
+              <div class="image-item">
+                <img src="./FISKASY/ahf.png" alt="Image 10" />
+              </div>
+              <div class="image-item">
+                <img src="./FISKASY/ahh.png" alt="Image 11" />
+              </div>
+              <div class="image-item">
+                <img src="./FISKASY/ahg.png" alt="Image 12" />
+              </div>
+            </div>
+          </section>
         </section>
       </div>
 
       <div class="main-languages">
-        <a>Ukraiński</a>
-        <a>UK</a>
-        <a>Polski</a>
+        <h1 class="language-header">JĘZYK</h1>
+        <span class="languages-links">
+          <a><img src="./FISKASY/ua.png" class="lanuage-flag" /></a>
+          <a><img src="./FISKASY/uk.png" class="lanuage-flag" /></a>
+          <a><img src="./FISKASY/pl.png" class="lanuage-flag" /></a>
+        </span>
+
+        <div class="half-circle"></div>
+        <img
+          src="./other/background-shapes_3.svg"
+          alt="background-shapes"
+          class="background-shapes-language"
+        />
+        <div class="background-shapes-language-big-container">
+          <img
+            src="./other/background-shapes_3.svg"
+            alt="background-shapes"
+            class="background-shapes-language-big"
+          />
+        </div>
+
+        <div class="big-circle-language">
+          <img
+            src="./other/black-price-dots.svg"
+            class="black-ellipse-language"
+          />
+        </div>
+        <div class="small-circle-language">
+          <img
+            src="./other/black-price-dots.svg"
+            class="black-ellipse-language-small"
+          />
+        </div>
+       <div class="background-shapes-language-big-container-second">
+        <img
+          src="./other/background-shapes.svg"
+          alt="background-shapes"
+          class="background-shapes-language-big-second"
+        />
+       </div>
+       
       </div>
     </div>
 
-    <div class="contact-section"></div>
-    <div class="about"></div>
-    <footer>
-      <div class="down-circle"></div>
+    <br>
+      <div class="contact-section">
+        <h2 class="contact-header">KONTAKT</h2>
+        <img
+            src="./other/black-price-dots.svg"
+            class="black-ellipse-contact"
+          />
+        <div class="contact-map">
+          <img src="./FISKASY/ajx.png" alt="map-left" class="map-left" />
+          <img src="./FISKASY/ajw.png" alt="map-right" class="map-right" />
+        </div>
+        <div class="esc-logo-container">
+          <img src="./FISKASY/aka.png" alt="esc-logo" class="esc-logo" />
+        </div>
+      </div>
+      <div class="contact-info">
+        <p class="contact-address-information-first-paragraph">
+          ESC SA Centrum - ul.Mieszczańska 19, 30-313 Kraków
+        </p>
+        <p class="contact-address-information-middle-paragraph">
+          poniedziałek - piątek 9.00 - 17.00
+        </p>
+        <p class="contact-address-information-last-paragraph">
+          ESC SA Nowa Huta - Osiedle Teatralne 3, 31-945 Kraków
+        </p>
+        <p class="contact-mail-first-paragraph">sprzedaz@escsa.pl</p>
+        <p class="contact-mail-last-paragraph">sprzedazh@escsa.pl</p>
+        <div class="contact-phone-first-paragraph">
+          <img src="./FISKASY/anh.png" alt="Icon" class="phone-icon" />
+          <p class="phone-content">
+            +48 12 633 73 08 <br /><span>+48 12 656 51 58</span>
+          </p>
+        </div>
+        <p class="contact-phone-last-paragraph">+48 12 656 33 64</p>
+      </div>
+      <div class="about">
+        <h2 class="about-header">O NAS</h2>
+        <article class="about-article">
+          Zajmujemy się kompleksową obsługą informatyczną przedsiębiorstw oraz
+          wdrażaniem oprogramowania do zarządzania sprzedażą i gospodarką
+          magazynową. Prezentowane na stronie produkty to oprócz oprogramowania
+          szeroko rozumiana elektronika wyposażenia handlu. Na naszym portalu
+          znajdą Państwo atrakcyjną ofertę urządzeń fiskalnych w korzystnych
+          cenach: kasy fiskalne, czy też inaczej nazywane kasy rejestrujące,
+          drukarki fiskalne, terminale fiskalne oraz zarówno fiskalne, jak i
+          niefiskalne systemy POS. Ponadto mamy w ofercie sklepowe wagi
+          elektroniczne: etykietujące, kalkulacyjne i platformowe. Całość
+          uzupełnia oferta terminali płatniczych, kolektorów danych, drukarek
+          kart i etykiet, drukarek paragonowych tzw. bonowników. Znajdą Państwo
+          u nas również szeroki asortyment akcesoriów do sprzedawanych urządzeń
+          jak pokrowce do kas fiskalnych, szuflady kasowe, rolki do kas i
+          drukarek fiskalnych czy też metkownice. Oferowane przez nas urządzenia
+          fiskalne wyprodukowane są przez czołowych na rynku producentów, jak:
+          Posnet, ElzaB, Novitus. Od jakiegoś czasu w naszej ofercie dostępne są
+          nowego typu kasy fiskalne tzw. kasy fiskalne online, które umożliwiają
+          łączenie się z Centralnym Repozytorium Kas. Urządzenia fiskalne
+          dostępne na naszej stronie są nowoczesne, funkcjonalne i różnorodne po
+          to, aby mogły być wykorzystywane w małych i dużych biznesach oraz
+          sprzedaży mobilnej. <br />
+          <br />
+          W szerokiej ofercie kas i drukarek sklepowych mamy te
+          najnowocześniejsze z kopią elektroniczną czy też on-line ready ale też
+          sprawdzone nieco starsze modele z dwoma rolkami. Sprzęt zakupiony w
+          naszej firmie otaczamy opieką serwisową oraz wykonujemy ustawowe
+          przeglądy okresowe kas i drukarek fiskalnych w bardzo atrakcyjnych
+          cenach. Naszym klientom staramy się w miarę możliwości przypominać o
+          ustawowych obowiązkach w zakresie fiskalnych kas i drukarek
+          sklepowych. Obecnie wychodząc naprzeciw oczekiwaniom rynku
+          poszerzyliśmy wachlarz urządzeń fiskalnych o te niewielkich rozmiarów,
+          zaprojektowanych dla małych i średnich firm lub do prowadzenia
+          sprzedaży przenośnej lub obwoźnej a wyróżniające się atrakcyjnymi
+          cenami. Jeśli szukasz <b>kasy fiskalnej w Krakowie</b> to dobrze
+          trafiłeś.<br />
+          Warto przeglądać dział promocji prezentowany na górze naszej strony. W
+          dziale tym prezentujemy urządzenia, w cenach najtańszych w Krakowie.
+          Drogi kliencie jeśli tak nie jest i znajdziesz promowane urządzenie
+          taniej u konkurencji dzwoń do naszych handlowców. Postaramy się zrobić
+          wszystko abyś był zadowolony z ceny. Oferowany przez nas sprzęt
+          fiskalny wyprodukowany jest przez firmy wiodące na rynku urządzeń
+          fiskalnych tj. Novitus, Posnet, Elzab, Datecs, iNNOVA, Incotex,
+          Aclas.<br /><br />
+          Strona www.kasy-fiskalne-krakow.pl jest własnością firmy
+          <b>ESC SA</b> Portal skupia się na obsłudze firm w Krakowie oraz całej
+          Małopolsce. Obsługa ogólnopolska urządzeń fiskalnych opisana jest a
+          stronie fiskasy.pl
+        </article>
+        <img
+        src="./other/background-shapes_3.svg"
+        alt="background-shapes"
+        class="background-shapes-article"
+      />
+        <div class="logo-companies-container">
+          <img src="./FISKASY/alv.png" class="company-logo-novitus" />
+          <img src="./FISKASY/alt.png" class="company-logo-posnet" />
+          <img src="./FISKASY/alr.png" class="company-logo-datecs" />
+          <img src="./FISKASY/alp.png" class="company-logo-innova" />
+        </div>
+      </div>
+<footer>
+      <div class="down-circle">
+        <div class="footer-info">
+          <div class="esc-logo-footer-container"><img src="./FISKASY/ajv.png" class="esc-logo-footer"/></div>
+          <div class="socials-footer">
+            <div class="adress-footer">
+             <img src="./FISKASY/amk.png" alt="pin" class="pin-emoji"/>
+            <p class="adress-footer-info">
+              ESC SA Centrum - ul.Mieszczańska 19, 30-313 Kraków    </br>
+              ESC SA Nowa Huta - Osiedle Teatralne 3, 31-945 Kraków</p>
+            </p>  
+            </div>
+           <div class="phones-footer">
+             <img src="./FISKASY/anh.png" alt="Icon" class="phone-emoji" />
+            <p class="phone-content-footer">
+              +48 12 633 73 08 <br />+48 12 656 51 58
+            </p>
+           </div>
+           <div class="mail-footer">
+            <img src="./FISKASY/anf.png" alt="mail-emoji" class="email-emoji"/>
+            <p class="email-footer">sprzedaz@escsa.pl</p>
+           </div>
+           <div class="open-hours">
+            <img src="./FISKASY/amm.png" alt="hour-emoji" class="hours-footer-emoji" />
+            <p class="open-hours-footer"> poniedziałek-piątek 9:00-17:00</p>
+           </div>
+           <div class="alert-phone">
+            <img src="./FISKASY/amo.png" alt="alert-emoji" class="alert-emoji"/>
+            <p class="alert-phone">+48 508 031 790 <br>
+            (telefon dyżurny -8:00-18:00 w dni robocze)</p>
+           </div>
+          </div>
+          <div class="fiskasy-footer"><img src="./FISKASY/aji.png" class="fiskasy-footer-img"/>
+        </div>
+      </div>
+
+      <div class="footer-shapes">
+        <div class="blue-circle-footer-first"></div>
+        <div class="blue-circle-footer-second"></div>
+        <img src="./other/dot_ellipse.svg" class="white-circle-footer" />
+        <img src="./other/black-price-dots.svg" class="black-circle-footer" />
+      </div>
+      
+      </div>
+    
     </footer>
   </body>
 
